@@ -1,0 +1,19 @@
+{
+  "author": "Bocoup",
+  "name": "tiny-jquery",
+  "description": "A tiny implementation of the jQuery API",
+  "version": "0.0.1",
+  "engines": {
+    "node": "~0.8"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4",
+    "grunt-cli": "~0.1",
+    "grunt-contrib-jshint": "0.1.1rc5",
+    "grunt-contrib-qunit": "0.1.1rc5"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}
