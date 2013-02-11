@@ -8,20 +8,15 @@
       return new tQuery(selector, context);
     }
 
-    context || (context = window.document)
-
-    this.results = context.querySelectorAll(selector);
-    for (var i = 0; i < this.results.length; ++i) {
-      this[i] = this.results[i];
+    var results = (context || window.document).querySelectorAll(selector);
+    for (var i = 0; i < results.length; ++i) {
+      this[i] = results[i];
     }
-    this.length = this.results.length;
-
-    return this;
+    this.length = results.length;
   }
   tQuery.prototype.forEach = function(callback) {
-    for (var i = 0; i < this.results.length; ++i) {
-      var result = this.results[i];
-      callback.apply(result, [result, i]);
+    for (var i = 0; i < this.length; ++i) {
+      callback.apply(this[i], [this[i], i]);
     }
   };
 
