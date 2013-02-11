@@ -13,6 +13,20 @@ You'll need [Node.js (http://nodejs.org)](http://nodejs.org) and [Grunt
 (http://gruntjs.com)](http://gruntjs.com) if you want to lint your code and run
 the tests from the command line.
 
+## Test server (optional)
+
+If you'd like to run the tests in a browser, install [Node.js (http://nodejs.org)](http://nodejs.org) and then install the "send" npm package:
+```shell
+npm install send
+```
+
+and then run:
+```shell
+node demo_server.js
+```
+
+and finally navigate a browser to http://127.0.0.1:8337/test/.
+
 ## API
 
 Select DOM elements:

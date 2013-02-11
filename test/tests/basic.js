@@ -48,7 +48,7 @@ test("Complex selectors", 3, function() {
 test("Context", 1, function() {
 	var emptySpan = document.getElementById("test-id");
 
-	equal($$(".test-c", emptySpan).length, 1, "Retusn the correct number of elements");
+	equal($$(".test-c", emptySpan).length, 1, "Returns the correct number of elements");
 });
 
 module("Iteration", {
